@@ -1,5 +1,5 @@
 /*
-   Copyright (C) 2000-2016  Ulric Eriksson <ulric@siag.nu>
+   Copyright (C) 2000-2026  Ulric Eriksson <ulric@siag.nu>
 
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -472,10 +472,10 @@ static void netlog(int fd, int i, unsigned char *r, int n)
 	DEBUG(2, "netlog(%d, %d, %p, %d)", fd, i, r, n);
 	strncpy(b, "+ ", sizeof b);
 	k = 2;
-	strncpy(b+k, pen_ntoa(&clients[conns[i].client].addr), (sizeof b)-k);
+	strncpy(b+k, pen_ntoa(&clients[conns[i].client].addr), (sizeof b)-(k+1));
 	k += strlen(b+k);
 	b[k++] = ' ';
-	strncpy(b+k, pen_ntoa(&servers[conns[i].server].addr), (sizeof b)-k);
+	strncpy(b+k, pen_ntoa(&servers[conns[i].server].addr), (sizeof b)-(k+1));
 	k += strlen(b+k);
 	b[k++] = ' ';
 

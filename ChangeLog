@@ -1,4 +1,6 @@
 
+260128	Fixed off by one warning in netlog.
+
 231019	In handle_events: deal with failed connect() more gracefully than just
 	closing the connection.
 
