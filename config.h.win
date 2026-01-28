@@ -104,7 +104,7 @@
 #define PACKAGE_NAME "pen"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "pen 0.27.0"
+#define PACKAGE_STRING "pen 0.35.0"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "pen"
