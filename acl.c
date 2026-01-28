@@ -98,6 +98,7 @@ void add_acl_geo(int a, char *country, unsigned char permit)
 	DEBUG(2, "add_acl_geo(%d, %s, %d", a, country, permit);
 	acls[a][i].class = ACE_GEO;
 	strncpy(acls[a][i].ace.geo.country, country, 2);
+	acls[a][i].ace.geo.country[2] = '\0';
 }
 
 void del_acl(int a)

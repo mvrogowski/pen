@@ -21,7 +21,7 @@ typedef struct {
 } ace_ipv6;
 
 typedef struct {
-	char country[2];
+	char country[3];	/* 2 char country + terminating null */
 } ace_geo;
 
 typedef struct {
