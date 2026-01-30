@@ -40,7 +40,8 @@ are still created, and Penlogd can still be used to consolidate them
 automatically.
 
 
-This load balancer is known to work on FreeBSD, Linux, HP-UX and Solaris.
+This load balancer is known to work on NetBSD, OpenBSD, FreeBSD, HP-UX,
+Solaris and multiple flavours of Linux. It also works on Windows.
 Other Unixes should work as well, possibly requiring trivial changes.
 Success stories or problem reports are welcome.
 
